@@ -16,45 +16,46 @@
 }
 
 .style_of_map{
-    height: 930px;
+    /* height: 930px; */
+    width: 100%;
 }
 
 .room1{
     position: relative;
-    top: -41rem;
-    left: 78rem;
+    top: -44rem;
+    left: 90rem;
     /* background-color: aqua; */
     width: 188px;
 }
 
 .room2{
     position: relative;
-    top: -41rem;
-    left: 52rem;
+    top: -44rem;
+    left: 60rem;
     /* background-color: aqua; */
     width: 188px;
 }
 
 .room3{
     position: relative;
-    top: -41rem;
-    left: 12rem;
+    top: -44rem;
+    left: 15rem;
     /* background-color: aqua; */
     width: 188px;
 }
 
 .room4{
     position: relative;
-    top: -17rem;
-    left: 11rem;
+    top: -304px;
+    left: 13rem;
     /* background-color: aqua; */
     width: 188px;
 }
 
 .room5{
     position: relative;
-    top: -17rem;left: 44rem;
-    left: 44rem;
+    top: -304px;left: 44rem;
+    left: 51rem;
     /* background-color: aqua; */
     width: 188px;
 }
@@ -87,10 +88,16 @@
 }
 
 .nav_position{
-
+    position: absolute;
 }
 
 .newsImage{
     width: 237px;
   height: 418px;
+}
+
+body{
+    margin: 0;
+    background-color: #d19e0d;
+    overscroll-behavior-block: none;
 }
