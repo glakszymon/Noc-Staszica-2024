@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Noc staszica</title>
+        <!-- <link rel="shortcut icon" type="image/jpg" href="./images/logo.png"/> -->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script> -->
+
+    </head>
+    <body>
+        <div id="app">
+            <div class="site">
+                <div class="nav_position">    
+                <img src="image/dayNews.jpg" class="newsImage"> 
+                    <nav class="menu">
+                        <button @click="Room24_change" class="button_style">Escape room</button>
+                        <button @click="Room26_change" class="button_style">Kawiarenka</button>
+                        <button @click="RoomAula_change" class="button_style">Pokaz mody</button>
+                        <button @click="Room33_change" class="button_style">Mafia</button>
+                        <button @click="RoomAula_change" class="button_style">Potańcówka</button>
+                        <button @click="Room29_change" class="button_style">Beer pong</button>
+                        <button @click="Room29_change" class="button_style">Tabu szkolne</button>
+                        <button @click="Room29_change" class="button_style">Twister</button>
+                        <button @click="Room29_change" class="button_style">Poker</button>
+                        <button @click="RoomAula_change" class="button_style">Zawody</button>
+                    </nav>
+                </div>
+
+                <div class="map">
+                    <img src="image/map.jpeg" class="style_of_map">
+                    <div class="room1" v-if="room24">
+                        <img src="image/old-paper.png" class="background_image">
+                        <div class="room5_text">
+                            <h2>Sala 24</h2>
+                            <br/>
+                            Escape room
+                            <br/>
+                            (wpuszczamy co 30 min)
+                        </div>
+                    </div>
+                    <div class="room2" v-if="room26">
+                        <img src="image/old-paper.png" class="background_image">
+                        <div class="room5_text">
+                            <h2>Sala 26</h2>
+                            <br/>
+                            Kawiarenka
+                        </div>
+                    </div>
+                    <div class="room3" v-if="room29">
+                        <img src="image/old-paper.png" class="background_image">
+                        <div class="room5_text">
+                            <h2>Sala 29</h2>
+                            <br/>
+                            Tabu szkolne
+                            <br/>
+                            Beer pong
+                            <br/>
+                            Twister
+                            <br/>
+                            Poker
+                            <br/>
+                            Planszówki
+                        </div>
+                    </div>
+                    <div class="room4" v-if="room33">
+                        <img src="image/old-paper.png" class="background_image">
+                        <div class="room5_text">
+                            <h2>Sala 33</h2>
+                            <br/>
+                            Mafia
+                        </div>
+                    </div>
+                    <div class="room5" v-if="roomAula">
+                        <img src="image/old-paper.png" class="background_image">
+                        <div class="room5_text">
+                            <h2>Sala Aula</h2>
+                            <br/>
+                            Potańcówka
+                            <br/>
+                            Pokaz mody (o 21:20)
+                            <br/>
+                            Zawody (o 22:00)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let app = Vue.createApp({
+            el: '#app', 
+            data() {
+                return {
+                    room24: false,
+                    room26: false,
+                    room29: false,
+                    room33: false,
+                    roomAula: false,
+                }
+            },
+
+            methods: {
+                Room24_change() {
+                   
+                        this.room24 = true;
+                        this.room26 = false;
+                        this.room33 = false;
+                        this.room29 = false;
+                        this.roomAula = false;
+                  
+                },
+
+                Room26_change() {
+                        this.room24 = false;
+                        this.room26 = true;
+                        this.room33 = false;
+                        this.room29 = false;
+                        this.roomAula = false; 
+                },
+
+                Room29_change() {
+                
+                        this.room24 = false;
+                        this.room26 = false;
+                        this.room33 = false;
+                        this.room29 = true;
+                        this.roomAula = false;
+                    
+                },
+
+                Room33_change() {
+                    
+                        this.room24 = false;
+                        this.room26 = false;
+                        this.room33 = true;
+                        this.room29 = false;
+                        this.roomAula = false;
+                   
+                },
+
+                RoomAula_change() {
+                   
+                        this.room24 = false;
+                        this.room26 = false;
+                        this.room33 = false;
+                        this.room29 = false;
+                        this.roomAula = true;
+                   
+                },
+
+            },
+        });
+        
+        app.mount("#app");
+
+    </script>
+</html>

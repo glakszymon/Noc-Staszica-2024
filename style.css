@@ -1,0 +1,96 @@
+.menu{
+    /* background-color: aqua; */
+    width: 232px;
+    height: 58rem;
+    position: relative;
+    top: -341px;
+    left: 2px;
+}
+
+.map{
+    margin-left: 1rem;
+}
+
+.site{
+    display: flex;
+}
+
+.style_of_map{
+    height: 930px;
+}
+
+.room1{
+    position: relative;
+    top: -41rem;
+    left: 78rem;
+    /* background-color: aqua; */
+    width: 188px;
+}
+
+.room2{
+    position: relative;
+    top: -41rem;
+    left: 52rem;
+    /* background-color: aqua; */
+    width: 188px;
+}
+
+.room3{
+    position: relative;
+    top: -41rem;
+    left: 12rem;
+    /* background-color: aqua; */
+    width: 188px;
+}
+
+.room4{
+    position: relative;
+    top: -17rem;
+    left: 11rem;
+    /* background-color: aqua; */
+    width: 188px;
+}
+
+.room5{
+    position: relative;
+    top: -17rem;left: 44rem;
+    left: 44rem;
+    /* background-color: aqua; */
+    width: 188px;
+}
+
+
+.button_style{
+    background: none;
+    border: none;
+    width: 100%;
+    /* background-color: chartreuse; */
+    height: 2rem;
+    border-bottom: 2px solid black;
+}
+
+.button_style:hover{
+    background-color: rgb(67, 134, 0);
+    cursor: pointer;
+}
+
+
+.room5_text{
+    position: relative;
+    top: -220px;
+    left: 30px;
+    text-align: center;
+}
+
+.background_image{
+    height: 251px;
+}
+
+.nav_position{
+
+}
+
+.newsImage{
+    width: 237px;
+  height: 418px;
+}
